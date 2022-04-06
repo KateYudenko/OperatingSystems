@@ -10,9 +10,9 @@ public:
 	Number radius();
 	Number angle();
 
-	Vector add(Vector v1, Vector v2);
-	Vector subtract(Vector v1, Vector v2);
+	static Vector add(Vector v1, Vector v2);
+	static Vector subtract(Vector v1, Vector v2);
 };
 
-extern Vector ZERO_VECTOR(ZERO_NUMBER, ZERO_NUMBER);
-extern Vector ONE_VECTOR(ONE_NUMBER, ONE_NUMBER);
+const Vector ZERO_VECTOR(ZERO_NUMBER, ZERO_NUMBER);
+const Vector ONE_VECTOR(ONE_NUMBER, ONE_NUMBER);
