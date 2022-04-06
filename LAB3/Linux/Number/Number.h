@@ -7,19 +7,19 @@ public:
 	Number();
 	Number createNumber(double valueNum);
 
-	Number add(Number a, Number b);
-	Number subtract(Number a, Number b);
-	Number multiply(Number a, Number b);
-	Number divide(Number a, Number b);
+	static Number add(Number a, Number b);
+	static Number subtract(Number a, Number b);
+	static Number multiply(Number a, Number b);
+	static Number divide(Number a, Number b);
 
 	Number operator+(Number a);
 	Number operator-(Number a);
 	Number operator*(Number a);
 	Number operator/(Number a);
 
-	Number sqrtNum(Number a);
-	Number asinNum(Number a);
+	static Number sqrtNum(Number a);
+	static Number asinNum(Number a);
 };
 
-extern Number ZERO_NUMBER(0);
-extern Number ONE_NUMBER(1);
+const Number ZERO_NUMBER(0);
+const Number ONE_NUMBER(1);
